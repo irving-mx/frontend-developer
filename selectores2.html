@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <style>
+            *{
+                background: violet;
+            }
+            div p{
+                color:aquamarine;
+                background: red;
+            }
+            div > section{
+                background: yellow;
+            }
+            div + article{
+                background:purple;
+            }
+            div ~ main{
+                background:palegreen;
+            }
+        </style>
+    </head>
+    <body>
+        <div> Descentientes
+            <p>Descendientes</p>
+            <p>Descendiente 1</p>
+            <p>Descendiente 2</p>
+            <p>
+                <p>
+                    <p>Anidado 2 nivel</p>
+                </p>
+            </p>
+        </div>
+        <div>
+            <section>Hola </section>
+            <section>
+                <section>Anidamiento 1 nivel</section>
+            </section>
+        </div>
+        <article>Adyacente (ALADO)</article>
+        <article>Adyacente?(ESTA UNO ANTES Y POR ELLO YA NO ES ADYACENTE)</article>
+        <article>Adyacente2?(HAY DOS ANTES Y POR ELLO NO ERES ADYACENTE)</article>
+        <div>
+        </div>
+        <main>1Hermano de un DIV</main>
+        <main>2 Hermano de un DIV</main>
+        <main>3 Hermano de un DIV</main>
+        <div>En este caso los de arriba toman a todos del mismo nivel que un div, es como tener un adyacente pero no solo 1 si no a todos los de alado</div>
+    </body>
+</html>
