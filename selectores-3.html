@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pseudoclases y pseudoelementos</title>
+        <!--PseudoClases-->
+        <style>
+            p{
+                color: salmon;
+            }
+            /*Efecto cuando pasa por arriba el mouse va a cambiar a color aqua*/
+            p:hover{
+                color: aqua;
+            }
+            /*Selecciona al 2 elemento (partiendo desde el 1)*/
+            div p:nth-child(2){
+                color: violet;
+            }
+            /* PseudoElementos*/
+
+            /*La primera letra del contenido la colorea de color teal*/
+            p::first-letter{
+                color: teal;
+            }
+
+            /* Antes del contenido agrega el emoji de cactus*/
+            p::before{
+                content: "🌵";
+            }
+
+            /* Despues del contenido agrega el emoji del girasol*/
+            p::after{
+                content: "🌻";
+            }
+
+            /*Cambia de color el texto de adentro del input llamado placeholder*/
+            ::placeholder{
+                color: tomato;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Hola</p>
+        <div>
+            <p>Platzi</p>
+            <p>Master</p>
+            <p>Lo mejor</p>
+        </div>
+        <input type="text" placeholder="name">
+    </body>
+</html>
