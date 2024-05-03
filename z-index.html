@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Z-index</title>
+        <style>
+            div{
+                position: absolute;
+                background: thistle;
+            }
+            .red{
+                z-index: 5;
+                width: 200px;
+                height:200px;
+                background: red;
+                left:160px
+            }
+            .blue{
+                z-index: 4;
+                width: 200px;
+                height:200px;
+                background: blue;
+                ;
+            }
+            .yellow{
+                z-index: 6;
+                width: 200px;
+                height:200px;
+                background: yellow;
+                top: 150px;
+                left: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="red">Red</div>
+            <div class="blue">Blue
+                <div class="yellow">Yellow</div>
+            </div>
+        </section>
+    </body>
+</html>
