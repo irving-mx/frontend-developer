@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Propiedades y valores de CSS</title>
+        <style>
+            html,body{
+                padding: 0;
+                margin: 0;
+                border: 0;
+            }
+            section{
+                /* background:plum; */
+                width:100%;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                background: black;
+            }
+            .card{
+                width:500px;
+                height:650px;
+                background:rgba(53, 50, 50, 0.712);
+                position: relative;
+                top: 80px;
+                border-radius: 50px;
+                overflow:hidden;
+            }
+            .card img{
+                width: 100%;
+                height:50%;
+            }
+            .card .luffy{
+                width: 140px;
+                height: 140px;
+                border-radius: 50%;
+                border: solid 5px black;
+                position: relative;
+                left: 35%;
+                bottom:70px;
+            }
+            div .name{
+                color: aliceblue;
+                display: flex;
+                justify-content: center;
+                position: relative;
+                bottom:70px;
+                flex-direction: column;
+                text-align: center;
+            }
+            .name img{
+                width: 100px;
+                height:100px;
+            }
+            h3{
+                margin:4px;
+            }
+            p{
+                margin: 2px;
+            }
+
+            .bandera{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            div .bandera img{
+                width: 40px;
+                height:40px;
+            }
+            div .bandera h4{
+                color: darkgray;
+            }
+            div .uam{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            div .uam img{
+                width:40px;
+                height:40px;
+                background: white;
+                border-radius: 20px;
+            }
+            span{
+                color: rgb(113, 143, 143);
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="card">
+                <img src="https://luiseduardoros.com/wp-content/uploads/2022/01/0-Iguala-de-la-Independencia%E2%80%A6-Guerrero-jpg-webp.webp" alt="Iguala,Guerrero">
+                <div class="card2">
+                    <img class="luffy" src="https://hips.hearstapps.com/hmg-prod/images/one-piece-gear-5-portada-6505f17bdc0df.jpg?crop=0.75xw:1xh;center,top&resize=1200:*" alt="">
+                </div>
+                <div class="name">
+                    <h3>Irving Martinez</h3>
+                    <p>Frontend Developer</p>
+                    <span>_________________________________________</span>
+                    <div class="bandera">
+                        <img src="https://lh5.googleusercontent.com/proxy/5uLwAjUBBpfQSnYO0fGtbQmdTABuWq3EcXBM-WHeAVJv46YpoBuHQtbN20qBebfDEh1629RKddGxYo42bJbZvyj_KPuO23PLSgnnyCNl1kG2" alt="Bandera Mexicana">
+                        <h4>México</h4>
+                    </div>
+                    <span>_________________________________________</span>
+                    <div class="uam">
+                        <img src="https://w7.pngwing.com/pngs/77/250/png-transparent-uam-hd-logo-thumbnail.png" alt="Logo uam">
+                        <p>Universidad Autonoma Metropolitana</p>
+                    </div>
+                    <p>Ingeniero en Computación</p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
